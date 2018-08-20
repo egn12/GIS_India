@@ -30,7 +30,7 @@ for distance in distances:
     vlayer = QgsVectorLayer('/Users/elbagomeznavas/Desktop/temp_buffers/buffer_test_ring.shp', "buffer", "ogr")
     QgsMapLayerRegistry.instance().addMapLayer(vlayer)
 
-#counting the p.m. 2.5 within each buffer (not working yet)
+#counting the p.m. 2.5 within each buffer
 import processing
 layer = iface.activeLayer()
 Result = "/Users/elbagomeznavas/Desktop/temp_buffers/points_in_buffer_1.shp"
